@@ -1,0 +1,44 @@
+.header{
+    /* padding: 2rem; */
+    display: flex;
+}
+.logo{
+    height: 3rem;
+    width: 12rem;
+}
+.header-menue{
+    display: flex;
+    list-style: none;
+    color: white;
+    gap: 2rem;
+    margin-left: auto;
+    padding-right: 2rem;
+   }
+   .header-menue>li:hover{
+    cursor: pointer;
+    color: var(--orange);
+
+   }
+   @media screen and (max-width: 768px) {
+    .header>:nth-child(2){
+        position: fixed;
+        right: 1.5rem;
+        z-index: 99;
+
+    }
+    .header-menue{
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+        right: 2rem;
+        position: absolute;
+        z-index: 99;
+    }
+    .logo{
+        height: 2rem;
+        width: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    
+   }
